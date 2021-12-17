@@ -21,23 +21,10 @@ text-align: center;
 	animation: slide-top 1s cubic-bezier(0.200, 0.410, 0.400, 0.890) both;
 	animation-delay : 0.5s
 }
-.container {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 100px;
-}
 
-.next {
+.bb {
 	margin-top: 50px;
-	float: left;
-    transition-duration: 0.15s;
     cursor: pointer;
-}
-
-.next:hover{
-    top: 3px;
-    opacity: 70%;
-	transform: rotateY(180deg);
 }
 
 
@@ -70,16 +57,11 @@ text-align: center;
 
 <body>
 	
-<div><img src="tree.png" style="text-align: center; margin-bottom: 170px; margin-top: 170px;" width="400px"></div>
+<div><img src="end.png" style="text-align: center; margin-bottom: 150px; margin-top: 200px;" width="500px"></div>
 
-<div class="a1">
-<a>
-날이 좋은 어느 날, 웬일인지 안젤라의 기분이 좋아보였습니다. <p>아침부터 맛있는 빵을 굽더니, 다같이 나무꾼이 일하는 숲 속에 놀러가자고 <p>헨젤과 그레텔에게 제안하였습니다. <p>그렇게 네 식구는 다같이 깊고 깊은 숲 속으로 나무를 베러 떠났습니다.
-</a>
 </div>
 <div class="container">
-	<div class="cat" id="cat"><img src="cat.png" width="100px"></div>
-	<div class="next" id="next"><img src="next.png" width="150px"></div>
+	<div  class="bb" id="bb"><img src="btn1.png" width="100px" onmouseover="this.src='btn2.png'" onmouseout="this.src='btn1.png'"></div>
 
 </div>
 
@@ -87,12 +69,12 @@ text-align: center;
 
 <script type="text/javascript">
 	
-  next.onclick = function(){
-  	location.href = "2.html";
-  }
-  cat.onclick = function(){
+  bb.onclick = function(){
   	location.href = "index.html";
+ 	document.getElementById("bb").src = "btn2.png";
+
   }
+
 
 </script>
 
