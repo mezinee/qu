@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>quantummultieverse</title>
+
+<style type="text/css">
+	
+body {
+margin: 50px;
+text-align: center;
+}
+.a1 {
+	font-family: 'Gowun Batang', serif;
+	margin-bottom: 120px;
+	animation: slide-top 1s cubic-bezier(0.200, 0.410, 0.400, 0.890) both;
+	animation-delay : 0.5s
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.next {
+	margin-top: 50px;
+	float: left;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+.next:hover{
+    top: 3px;
+    opacity: 70%;
+	transform: rotateY(180deg);
+}
+
+
+.cat {
+	float: left;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+.cat:hover{
+    top: 3px;
+    opacity: 70%;
+	transform: rotateY(180deg);
+}
+
+
+@keyframes scroll {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(-100px);}
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+</style>
+
+<body>
+	
+<div><img src="ball.png" style="text-align: center; margin-bottom: 100px; margin-top: 60px;" width="420px"></div>
+
+<div class="a1">
+<a>
+마녀는 단단히 화가나 그대로 그레텔을 잡아먹었습니다. <p>헨젤은 그레텔이 죽었음을 알고 슬퍼하다 결국 마녀에게 이어서 잡아먹혔습니다.
+
+</a>
+</div>
+<div class="container">
+	<div class="cat" id="cat"><img src="cat.png" width="140px"></div>
+	<div class="next" id="next"><img src="next.png" width="150px"></div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+	
+  next.onclick = function(){
+  	location.href = "ending.html";
+  }
+  cat.onclick = function(){
+  	location.href = "index.html";
+  }
+
+</script>
+
+</html>

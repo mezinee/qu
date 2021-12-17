@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>quantummultieverse</title>
+
+<style type="text/css">
+	
+body {
+margin: 50px;
+text-align: center;
+}
+.a1 {
+	font-family: 'Gowun Batang', serif;
+	margin-bottom: 120px;
+	animation: slide-top 1s cubic-bezier(0.200, 0.410, 0.400, 0.890) both;
+	animation-delay : 0.5s
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.next {
+	margin-top: 50px;
+	float: left;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+.next:hover{
+    top: 3px;
+    opacity: 70%;
+	transform: rotateY(180deg);
+}
+
+
+.cat {
+	float: left;
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+.cat:hover{
+    top: 3px;
+    opacity: 70%;
+	transform: rotateY(180deg);
+}
+
+
+@keyframes scroll {
+	0% {transform: translateY(0);}
+	100% {transform: translateY(-100px);}
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+</style>
+
+<body>
+	
+<div><img src="house.png" style="text-align: center; margin-bottom: 100px; margin-top: 50px;" width="400px"></div>
+
+<div class="a1">
+<a>
+헨젤과 그레텔은 집으로 돌아가는 길을 잃고 정처없이 걸었습니다. <p>밤이 되니 날이 추워졌고, 배도 너무 고팠습니다. <p><p>그 때, 멀리서 희미한 빛이 보였습니다. <p>빛이 나는 방향으로 걸어보니 정말 먹음직스럽게 생긴 과자집이 있었습니다.
+</a>
+</div>
+<div class="container">
+	<div class="cat" id="cat"><img src="cat.png" width="100px"></div>
+	<div class="next" id="next"><img src="next.png" width="150px"></div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+	
+  next.onclick = function(){
+  	location.href = "9.html";
+  }
+  cat.onclick = function(){
+  	location.href = "index.html";
+  }
+
+</script>
+
+</html>
